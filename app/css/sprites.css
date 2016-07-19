@@ -1,0 +1,52 @@
+.Facebook, .Flickr, .Google_, .Instagram, .RSS, .Twitter, .Vimeo, .Youtube{
+	background: url(sprites.png) no-repeat;
+}
+
+.Facebook{
+	background-position: -8px -9px ;
+	width: 30px;
+	height: 31px;
+}
+
+.Flickr{
+	background-position: -64px -15px ;
+	width: 16px;
+	height: 16px;
+}
+
+.Google_{
+	background-position: -107px -8px ;
+	width: 30px;
+	height: 31px;
+}
+
+.Instagram{
+	background-position: -16px -65px ;
+	width: 16px;
+	height: 16px;
+}
+
+.RSS{
+	background-position: -64px -65px ;
+	width: 16px;
+	height: 16px;
+}
+
+.Twitter{
+	background-position: -109px -62px ;
+	width: 30px;
+	height: 31px;
+}
+
+.Vimeo{
+	background-position: -115px -115px ;
+	width: 16px;
+	height: 16px;
+}
+
+.Youtube{
+	background-position: -68px -116px ;
+	width: 16px;
+	height: 16px;
+}
+

@@ -1,0 +1,53 @@
+@import "bourbon"
+@import "vars.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+body
+	border-top: 5px solid $page-head__border
+	font-size: 12px
+
+.page-head
+	padding: 25px 0
+	.search
+		.search__input
+			outline: none
+			padding: 6.5px 10px
+			border: 1px solid #e7e7e7
+			font-size: 12px
+			font-family: Tahoma
+			color: #b2b2b2
+			&::-webkit-input-placeholder
+				color: #b2b2b2
+		.search__button
+			padding: 6px 13px
+			border: none
+			background-color: $accent-color
+			color: #fff
+			font-family: 'Oswald Regular'
+			font-size: 14px
+
+//ALWAYS END
+@import "media"
