@@ -1,6 +1,6 @@
 @import "bourbon"
 @import "vars.sass"
-
+@import "../app/libs/owl.carousel/owl-carousel/owl.carousel.css"
 *::-webkit-input-placeholder
 	color: #666
 	opacity: 1
@@ -125,23 +125,156 @@ body
 
 //SECTION 2
 .page-section__2
-	font-family: 'Tahoma'
-	.block_header
-		font-size: 14px
-		font-family: 'Oswald Regualr'
-		text-transform: uppercase
-		&:before
-			margin-top: 2px
-			margin-right: 5px
-			content: ' '
-			float: left
+	.item
+		font-family: 'Tahoma'
+		font-size: 12px
+		line-height: 1.4
+		.page-link__black
 			display: block
-			width: 15px
-			height: 15px
-			background-color: $accent-color
-	.service-block
-		.service-block_descr
+			margin-top: 15px
+		.item-descr__italic
+			font-style: italic
+		.bold
+			font-style: normal
+			font-weight: 600
+			margin-top: 10px
+		.sec_img
+			margin-right: 47px
+			margin-bottom: 30px
+//SECTION 3
+.page-section__3
+	font-family: 'Tahoma'
+	.service-and-support-block
+		.service-and-support-block__descr
+			font-size: 12px
+			margin-top: 0
+			margin-bottom: 25px
+	.team-item
+		font-family: 'Tahoma'
+		font-size: 12px
+		margin: 10px 0
+		.team-item__head-descr
+			font-size: 11px
+			margin: 0
+		.team-item__descr
+			line-height: 1.2
+			margin: 0
+		.team-item__img
+			margin-top: 4px
+			margin-right: 10px
+			margin-bottom: 15px
+	.our-partners-block
+		margin-bottom: 50px	
 
+.top_header
+		margin-bottom: 20px
+		.hatch
+			margin-left: 10px
+			margin-bottom: 8px
+		.block_header
+			font-size: 14px
+			font-family: 'Oswald Regualr'
+			text-transform: uppercase
+			margin-bottom: 0px
+			margin-top: 0
+			display: block
+			float: left
+			&:before
+				margin-top: 2px
+				margin-right: 5px
+				content: ' '
+				float: left
+				display: block
+				width: 15px
+				height: 15px
+				background-color: $accent-color
 
+.page-link__black
+	color: #000
+	text-decoration: underline
+	font-size: 12px
+
+//PAGE FOOTER
+.page-footer
+	font-family: 'Tahoma'
+	color: #dbdbdb
+	background-color: $page-head__border
+	padding: 15px 0
+	hr
+		margin: 5px 0 10px 0
+		border-top: 1px solid #919191
+	.footer-sec__header
+		color: #fff
+		font-size: 14px
+		text-transform: uppercase
+		font-weight: 800
+		margin: 0
+		white-space: nowrap
+	.tw-feed
+		.tw-feed__descr
+			font-size: 11px
+			margin-top: 5px
+			margin-bottom: 0
+		.tw-feed__link
+			color: #919191
+			text-decoration: underline
+			font-size: 11px
+	.site-map
+		.site-map__links
+			margin: 0
+			padding: 0
+			font-size: 12px
+			li
+				list-style-type: none
+				a
+					color: #919191
+	.social
+		.sc__links
+			a
+				display: block
+				float: left
+				margin-left: 9px
+				margin-bottom: 10px
+		.fb, .tw, .gl, .inst, .flickr, .rss, .vimeo, .yt
+			background: url('../img/sprites.png') no-repeat
+		.fb
+			background-position: -1px -1px 
+			width: 30px
+			height: 31px
+		.tw
+			background-position: -51px -2px 
+			width: 30px
+			height: 31px
+		.gl
+			background-position: -68px -67px 
+			width: 30px
+			height: 31px
+		.inst
+			background-position: -15px -67px 
+			width: 16px
+			height: 16px
+		.flickr
+			background-position: -31px -83px 
+			width: 16px
+			height: 16px
+		.rss
+			background-position: 0 -51px 
+			width: 16px
+			height: 16px
+		.vimeo
+			background-position: 0 -83px 
+			width: 16px
+			height: 16px
+		.yt
+			background-position: -32px -51px 
+			width: 16px
+			height: 16px
+	.company-info
+		.company-info__logo
+			margin-top: 10px
+		.company-info__descr
+			font-size: 10px
+			white-space: nowrap
+			margin-top: 15px				
 //ALWAYS END
 @import "media"
