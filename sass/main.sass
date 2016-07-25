@@ -24,15 +24,15 @@ body input:required:valid,
 body textarea:required:valid
 	color: #666
 
-//Custom Styles Here
+/*GENERAL STYLE FOR ALL HERE */
 body
 	border-top: 5px solid $page-head__border
 	font-size: 16px
 	font-family: 'Oswald Regular'
 	color: $text-color
 
-//HEADER
-
+/* HOME PAGE BEGIN           */
+/* HEADER HOME PAGE BEGIN    */
 .page-head
 	padding: 25px 0 30px 0
 	.search
@@ -77,8 +77,8 @@ body
 			a
 				color: #fff
 
-//SECTION 1
-
+/* HEADER HOME PAGE END      */
+/* SECTION 1 HOME PAGE BEGIN */
 .page-section__1
 	font-family: 'Oswald Light'
 	.slider
@@ -118,12 +118,17 @@ body
 					text-align: center
 					float: left
 					margin-right: 10px
-			.custom-counter__li--active
-					color: $accent-color
-					&:before
-						background-color: $accent-color
 
-//SECTION 2
+#custom-counter__li--active
+	color: $accent-color
+	a
+		color: $accent-color
+	&:before
+		background-color: $accent-color
+
+
+/* SECTION 1 HOME PAGE END   */
+/* SECTION 2 HOME PAGE BEGIN */
 .page-section__2
 	.item
 		font-family: 'Tahoma'
@@ -194,7 +199,8 @@ body
 	text-decoration: underline
 	font-size: 12px
 
-//PAGE FOOTER
+/* SECTION 2 HOME PAGE END   */
+/* FOOTER HOME PAGE BEGIN    */
 .page-footer
 	font-family: 'Tahoma'
 	color: #dbdbdb
@@ -227,7 +233,7 @@ body
 			li
 				list-style-type: none
 				a
-					color: #919191
+					color: #fff
 	.social
 		.sc__links
 			a
@@ -275,6 +281,133 @@ body
 		.company-info__descr
 			font-size: 10px
 			white-space: nowrap
-			margin-top: 15px				
+			margin-top: 15px
+
+/* FOOTER HOME PAGE END      */
+/* HOME PAGE END             */
+
+/* ABOUT PAGE BEGIN          */
+.about-section__1
+	.section-header
+		.section-header__head
+			margin: 0
+			position: relative
+			bottom: 15px
+			font-family: 'Oswald Regular'
+			font-size: 40px
+			text-transform: uppercase
+		.small_pattern
+			margin-right: 13px
+		.large_pattern
+			margin-left: 30px
+	.about-nav
+		ul
+			margin: 0
+			padding: 0
+			li
+				list-style-type: none
+				font-family: 'Oswald Light'
+				font-weight: 800
+				font-size: 14px
+				text-transform: uppercase
+				display: block
+				padding: 10px
+				background-color: #f3f3f3
+				border: 1px solid #e7e7e7
+				a
+					color: $text-color
+				&:before
+					margin-top: 7px
+					margin-right: 10px
+					content: ' '
+					float: left
+					display: block
+					width: 8px
+					height: 8px
+					background-color: #8f8f8f
+	.our-offices
+		margin-top: 30px
+		.header__heading
+			margin: 0
+			padding: 12px
+			background-color: $accent-color
+			color: #fff
+			font-family: 'Oswald Regular'
+			font-family: 14px
+			text-transform: uppercase
+		.img-block
+			background-color: #f3f3f3
+			border: 1px solid #e7e7e7
+			padding: 10px 12px
+			img
+				max-width: 100%
+
+.about-content
+	.about-content__header
+		background-color: $accent-color
+		padding: 20px 25px
+		font-family: 'Oswald Light'
+		color: #fff
+		margin-bottom: 20px
+		h2
+			margin: 0
+			font-size: 33px
+			font-weight: 400
+			text-transform: uppercase
+			font-style: italic
+			line-height: 1.1
+		p
+			margin: 0
+			font-size: 20px
+			color: #1d8ea6
+	.about-content__text
+		font-family: 'Tahoma'
+		font-size: 12px
+		margin: 0
+	.about-content__text--pusher
+		margin: 25px 0
+
+.about-content-pic
+	margin-top: 20px
+	margin-bottom: 30px
+	.row
+		img
+			width: 100%
+
+.our-team	
+	.our-team__heading
+		margin: 0
+		padding: 10px
+		background-color: $accent-color
+		font-family: 'Oswald Light'
+		font-size: 30px
+		color: #fff
+		text-transform: uppercase
+
+.about-content__mates
+	margin-top: 20px
+	margin-bottom: 30px
+	padding: 0 15px
+	.team-mate
+		float: left
+		margin-right: 45px
+		margin-bottom: 20px
+		font-family: 'Oswald Light'
+		&:nth-child(5)
+			margin: 0
+		&:nth-child(10)
+			margin: 0
+		.team-mate__name
+			font-size: 16px
+			margin: 5px 0 0 0
+		.team-mate__descr
+			color: $accent-color
+			font-size: 14px
+			font-weight: 800
+			margin: 0
+			letter-spacing: .9px
+
+/* ABOUT PAGE END 				   */
+
 //ALWAYS END
 @import "media"
