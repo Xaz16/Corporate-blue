@@ -126,6 +126,18 @@ body
 	&:before
 		background-color: $accent-color
 
+.about-section__1
+	.about-nav
+		.nav-submenu
+			color: #9b9b9b
+			li
+				background-color: #e7e7e7
+				border: 1px solid #dfdfdf 
+				&:before
+					visibility: hidden
+				&:hover
+					background-color: #eee
+					color: $accent-color
 /* SECTION 1 HOME PAGE END   */
 /* SECTION 2 HOME PAGE BEGIN */
 .page-section__2
@@ -418,7 +430,33 @@ body
 /* ABOUT PAGE END 				   */
 
 /* PROJECT PAGE BEGIN        */
-
+/* PROJECT PAGE CONTENT BEGIN */
+.project-content
+	.header
+		background-color: $accent-color
+		padding: 10px
+		h2
+			font-family: 'Oswald Light'
+			font-size: 30px
+			font-weight: 100
+			text-transform: uppercase
+			color: #fff
+			margin: 0
+	.project__descr
+		font-size: 12px
+		font-family: 'Tahoma'
+	.img-container
+		p
+			text-align: center
+		img
+			width: 100%
+	.project-container
+		padding-top: 20px
+		padding-bottom: 55px
+		.project-item
+			float: left
+			margin-left: 35px
+/* PROJECT PAGE CONTENT END   */
 /* PROJECT PAGE END          */
 //ALWAYS END
 @import "media"
